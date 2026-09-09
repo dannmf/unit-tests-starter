@@ -11,8 +11,24 @@ function multiplica(a, b) {
 }
 
 function divide(a, b) {
-  if (b === 0) throw new Error('Nao e possivel dividir por zero');
+  if (b === 0) throw new Error('não é possível dividir por zero');
   return a / b;
 }
 
-module.exports = { soma, subtrai, multiplica, divide };
+function ehPar(n) {
+  return n % 2 === 0;
+}
+
+function raiz(n) {
+  if (n < 0) throw new Error('não é possível calcular raiz de número negativo');
+  return Math.sqrt(n);
+}
+
+function media(numeros) {
+  if (!Array.isArray(numeros) || numeros.length === 0) {
+    throw new Error('A lista de numeros nao pode ser vazia');
+  }
+  return numeros.reduce((total, n) => total + n, 0) / numeros.length;
+}
+
+module.exports = { soma, subtrai, multiplica, divide, ehPar, raiz, media };
