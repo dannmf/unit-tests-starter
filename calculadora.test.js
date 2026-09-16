@@ -47,7 +47,27 @@ describe("divide", () => {
     });
 });
 
+// Continuação...
 describe("ehPar", () => {
-    test("retorno de um valor verdadeiro para numero par");
-    test("retorno de um valor falso para numero impar");
+    test("retorno de um valor verdadeiro para numero par", () => {
+        expect()
+    });
+    test("retorno de um valor falso para numero impar", () => {
+        expect()
+    });
+});
+
+describe("media", () => {
+    test("calcular corretamente a media de uma lista de inteiros", () => {
+        expect()
+    });
+    test("calcular corretamente a media quando o resultado for decimal", () => {
+        expect()
+    });
+    test("lançamento de erro quando lista estiver vazia", () => {
+        expect()
+    });
+    test("lançamento de erro quando o argumento não for array", () => {
+        expect()
+    });
 });
