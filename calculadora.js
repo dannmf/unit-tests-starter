@@ -20,7 +20,11 @@ function ehPar(n) {
 }
 
 function raiz(n) {
+<<<<<<< HEAD
   if (n < 0) throw new Error('não é possível calcular raiz de número negativo');
+=======
+  if (n < 0) throw new Error('Nao e possivel calcular raiz de numero negativo');
+>>>>>>> upstream/main
   return Math.sqrt(n);
 }
 
